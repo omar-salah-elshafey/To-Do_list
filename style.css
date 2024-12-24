@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #eee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.add-task-container,
+.task-list {
+  margin: 50px auto;
+  background-color: #e4d7c6;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.add-task-container {
+  height: 200px;
+}
+.task-list {
+  min-height: 100px;
+  padding: 30px 0;
+}
+.add-task-container #task-name {
+  width: 80%;
+  height: 60px;
+  margin: 20px auto;
+  padding: 5px 20px;
+  border: 1px solid #967f5c;
+  border-radius: 20px;
+  font-size: 20px;
+  transition: 0.2s;
+}
+.add-task-container #task-name:focus {
+  outline: none;
+  transform: scale(1.1);
+}
+.add-task-container #create-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #967f5c;
+  background-color: #e1c8a0;
+  font-size: 20px;
+  transition: 0.2s;
+}
+.add-task-container #create-button:hover {
+  cursor: pointer;
+  letter-spacing: 2px;
+  background-color: #ebe3d8;
+  transform: scale(1.1);
+}
+
+.task {
+  background-color: #ebe5de;
+  color: #3d372d;
+  padding: 10px 20px;
+  width: 80%;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+}
+.task:hover {
+  background-color: #d7d3c8;
+  cursor: pointer;
+}
+.task-done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.task button,
+#delete-all {
+  background-color: #ff0000; /* Button background color */
+  color: #fff; /* White text for contrast */
+  border: none; /* Remove default border */
+  padding: 5px 10px; /* Button padding */
+  border-radius: 7px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 14px; /* Button text size */
+}
+#delete-all {
+  margin-bottom: 20px;
+}
+.task button:hover {
+  background-color: #b30000; /* Darker shade on hover */
+}
